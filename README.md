@@ -141,3 +141,24 @@ solution:
 
 # order of operations
 P-E-M-D-A-S
+
+# if statement
+```commandline
+if (condition) {
+    // some code
+} else if(condition) {
+    // some code
+}
+else {
+    // some code
+}
+```
+
+`==` is direct comparison
+- the if statements will check top down
+- if the first condition is true, will skip the rest
+
+`string.isEmpty()`
+- checks if a string is empty
+
+emoji = command + control + space
