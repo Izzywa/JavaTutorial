@@ -128,4 +128,16 @@ solution:
   - input buffer
 
 # arithmetic operator
-+, - , *, /, 
++, - , *, /, %
+
+# augmented assignment operator
+`x+= y` is the same as `x = x + y` 
+
+- if the variable is assigned as integer, when dividing will not be able to store the decimal portion
+
+# increment and decrement operator
+`x++` is the same as `x+= 1`
+`x--` is the same as `x-= 1`
+
+# order of operations
+P-E-M-D-A-S
