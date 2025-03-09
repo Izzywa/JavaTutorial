@@ -126,3 +126,6 @@ scanner.nextDouble()
 solution:
 - add `scanner.nextLine()` after the integer and not assigning to a variable
   - input buffer
+
+# arithmetic operator
++, - , *, /, 
