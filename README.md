@@ -199,3 +199,59 @@ number = random.nextDouble()
 ```commandline
 isHeads = random.nextBoolean()
 ```
+
+# math methods
+```commandline
+Math.PI
+Math.E
+```
+- Returns the value of pi
+- e = exponential constant / Euler's number
+
+```commandline
+Math.pow(2, 3)
+```
+- raise 2 to the power of 3
+- 2³
+
+```commandline
+Math.abs(-5)
+```
+- the absolute value of -5
+- gives the value of the number but positive
+- the distance from 0
+
+```commandline
+Math.sqrt(9)
+```
+- returns the square root of 9
+
+```commandline
+Math.round(3.14)
+```
+- will return 3.0
+- round to the nearest integer
+
+```commandline
+Math.ceil(3.14)
+```
+- rounds up
+- will return 4.0
+
+```commandline
+Math.floor(3.99)
+```
+- round down
+- return 3.0
+
+```commandline
+Math.max(10,20)
+Math.min(10,20)
+```
+- return max and min   
+
+
+```commandline
+System.out.printf("%.1fcm", 3.1448973897);
+```
+- will return `3.1cm`
