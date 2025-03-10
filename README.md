@@ -162,3 +162,40 @@ else {
 - checks if a string is empty
 
 emoji = command + control + space
+
+
+# random numbers
+```commandline
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+    
+        Random random = new Random()
+        
+        int number = random.nextTint()
+        
+    }
+}
+```
+
+- will produce a very large random integer
+- range -2 bil-2 bil
+
+```commandline
+number = random.nextInt(1,6)
+```
+
+- get a random number 1-5
+- first number inclusive
+- second number exclusive
+
+can also generate random doubles
+```commandline
+number = random.nextDouble()
+```
+- random number between 0-1
+
+```commandline
+isHeads = random.nextBoolean()
+```
