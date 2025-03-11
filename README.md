@@ -299,3 +299,53 @@ System.out.printf("Hello %s", name);
   - 7899
 - can remove the `0`, to pad with only spaces
 - `-` will left justify the numbers
+
+# string methods
+```commandline
+string.length()
+```
+- get length of string
+
+```commandline
+string.charAt(index)
+```
+- give the character at `index`
+
+```commandline
+string.indexOf("o");
+```
+- return the index of the first occurrence of the letter 'o'
+
+```commandline
+string.lastIndexOf("o");
+```
+- return the last index of a character
+- the index number of the last occurrence of a character
+
+```commandline
+string.toUpperCase()
+string.toLowerCase()
+string.trim()
+```
+
+```commandline
+string.replace("o", "a");
+```
+- replaces any 'o' with 'a'
+
+```commandline
+string.isEmpty()
+```
+- return boolean if string is empty
+
+```commandline
+string.contains(" ");
+```
+- return boolean if a string contains a character
+
+```commandline
+string.equals("password");
+```
+- return boolean if 2 string matches
+- does not account to case sensitivity
+- `string.equalsIgnoreCase("password")` is case insensitive 
