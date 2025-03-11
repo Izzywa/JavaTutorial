@@ -255,3 +255,47 @@ Math.min(10,20)
 System.out.printf("%.1fcm", 3.1448973897);
 ```
 - will return `3.1cm`
+
+# printf statement
+- used to format output
+- insert a variable 
+  - add a placeholder `%`
+
+  - `%[flags][width][.precision][specifier-character]`
+
+```commandline
+System.out.printf("Hello %s", name);
+```
+- `%s` = defined that the variable is a string 
+- `%c` = char variable
+- need to manually insert new line character
+- `%d` = integers
+- `%f` = double
+- `%b` = boolean
+
+```commandline
+%+.1f
+%,.1f
+%(.1f
+% .1f
+```
+- the `[.precision]` is inserted before the `[specifier-character]`
+- adding `+` display + for positive numbers
+- adding `,` separate the numbers with a comma
+- adding `(` will enclose negative numbers in a `( )`
+- adding space ` ` will add space in front of a positive number and `-` in front of a negative number
+
+```commandline
+%04d
+%4d
+%-4d
+```
+- will pad the numbers with 0
+- need to add how many numbers to pad, `4` in this example
+- will result in numbers like
+  - 0001
+  - 0023
+  - 0456
+  - 7899
+- can remove the `0`, to pad with only spaces
+- `-` will left justify the numbers
