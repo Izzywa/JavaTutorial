@@ -35,7 +35,7 @@ use `//`
 
 multiline comment `/* comment */`
 
-### changing the ouput font
+### changing the output font
 file > settings > color scheme > console colors
 
 console > standard output
@@ -120,7 +120,7 @@ scanner.nextDouble()
         System.out.println("age: " + age);
         System.out.println("colour: " + colour);
 ```
-- pressing enter after inputing the integer
+- pressing enter after inputting the integer
 - the next line method picks up the new line character `\n` with enter and using it as the input
 
 solution:
@@ -348,7 +348,7 @@ string.equals("password");
 ```
 - return boolean if 2 string matches
 - does not account to case sensitivity
-- `string.equalsIgnoreCase("password")` is case insensitive 
+- `string.equalsIgnoreCase("password")` is case-insensitive 
 
 
 # string substring methods
@@ -433,3 +433,33 @@ for ( statement1 ; statement2 ; statement3 ) {
 - `statement3` = step
   - how much to increment
   - `i++`
+
+``` 
+break 
+continue
+```
+- `break` = break out of a loop 
+  - STOP
+- `continue` = skip loop
+
+# Thread class
+```
+ public static void main(String[] args) throws InterruptedException {
+ 
+  ...
+    Thread.sleep(1000) 
+  ...
+ 
+ }
+```
+- takes the amount of milliseconds that you want to sleep
+- java will want to throw an exception if the thread is interrupted
+- the exception occurs when a thread running the method is interrupted while it is 
+  - sleeping
+  - waiting
+  - paused in its execution
+- will need the `InterruptedException` code in order for the program to sleep
+
+# nested loop 
+- loop inside another loop
+- cannot use the same variable name for nested loops
