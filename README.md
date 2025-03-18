@@ -376,3 +376,19 @@ String username = email.substring(0, email.indexOf("@"));
 ```
 String passOrFail = (score >= 60) ? "PASS" : "FAIL"
 ```
+
+# enhanced switches
+- java 14 feature
+- switch = a replacement to any else if statements
+
+```
+String day = "Monday";
+switch(day) {
+  case "Monday", "Tuesday", "Wednesday", "Thursday" -> System.out.println("It is a weekday");
+  case "Saturday", "Sunday" -> System.out.println("It is a weekend");
+  default -> System.out.println("It is not a day");
+}
+```
+- inside the switch assign the variable we will examine
+- `->` = arrow operator
+  - do something
