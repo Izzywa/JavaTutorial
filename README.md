@@ -392,3 +392,13 @@ switch(day) {
 - inside the switch assign the variable we will examine
 - `->` = arrow operator
   - do something
+
+# logical operators
+- `&&` = AND
+- `||` = OR
+- `!` = NOT
+``` 
+if (temp <= 30 && temp >= 0 && isSunny) {
+...
+}
+```
