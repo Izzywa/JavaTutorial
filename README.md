@@ -415,3 +415,21 @@ do {
 ...
 } while (condition)
 ```
+
+# for loops
+- execute some code a certain amount of times
+
+```
+for ( statement1 ; statement2 ; statement3 ) {
+  ...
+ }
+```
+- `statement1` = initialisation
+  - `int i = 0`
+  - loop control variable
+- `statement2` = condition
+  - when to stop
+  - `i < 10`
+- `statement3` = step
+  - how much to increment
+  - `i++`
