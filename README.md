@@ -402,3 +402,16 @@ if (temp <= 30 && temp >= 0 && isSunny) {
 ...
 }
 ```
+
+# while loop
+- repeat some code forever while some condition remains true
+
+``` 
+while(name.isEmpty() {
+...
+}
+
+do {
+...
+} while (condition)
+```
