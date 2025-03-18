@@ -1,7 +1,7 @@
 # Java tutorial
 
 # Introduction
-```commandline
+```
     public static void main(String[] args) {
 
     }
@@ -49,20 +49,20 @@ sout => `System.out.println()`
 variable = a reusable container for a value
 
 declaration + assignment = variable
-```commandline
+```
 int age = 21;
 ```
 
 if assigned a different type = incompatible
 - if declared a variable to store int, can only store int
 
-```commandline
+```
 System.out.println("The year is " + year);
 ```
 
 variable naming convention in Java = camelCase
 
-```commandline
+```
 if (isStudent) {
     System.out.println("You are a student")
 }
@@ -77,12 +77,12 @@ assigning value to variable:
 - object that allow us to accept user input in Java
 - need to import from package `util`
 
-```commandline
+```
 import java.util.Scanner
 ```
 - create a scanner object to get user input 
 
-```commandline
+```
 Scanner scanner = new Scanner(System.in);
 
 System.out.print("Enter your name: ")
@@ -110,7 +110,7 @@ scanner.nextDouble()
 
 
 ### common issues
-```commandline
+```
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
 
@@ -143,7 +143,7 @@ solution:
 P-E-M-D-A-S
 
 # if statement
-```commandline
+```
 if (condition) {
     // some code
 } else if(condition) {
@@ -165,7 +165,7 @@ emoji = command + control + space
 
 
 # random numbers
-```commandline
+```
 import java.util.Random;
 
 public class Main {
@@ -182,7 +182,7 @@ public class Main {
 - will produce a very large random integer
 - range -2 bil-2 bil
 
-```commandline
+```
 number = random.nextInt(1,6)
 ```
 
@@ -191,67 +191,67 @@ number = random.nextInt(1,6)
 - second number exclusive
 
 can also generate random doubles
-```commandline
+```
 number = random.nextDouble()
 ```
 - random number between 0-1
 
-```commandline
+```
 isHeads = random.nextBoolean()
 ```
 
 # math methods
-```commandline
+```
 Math.PI
 Math.E
 ```
 - Returns the value of pi
 - e = exponential constant / Euler's number
 
-```commandline
+```
 Math.pow(2, 3)
 ```
 - raise 2 to the power of 3
 - 2³
 
-```commandline
+```
 Math.abs(-5)
 ```
 - the absolute value of -5
 - gives the value of the number but positive
 - the distance from 0
 
-```commandline
+```
 Math.sqrt(9)
 ```
 - returns the square root of 9
 
-```commandline
+```
 Math.round(3.14)
 ```
 - will return 3.0
 - round to the nearest integer
 
-```commandline
+```
 Math.ceil(3.14)
 ```
 - rounds up
 - will return 4.0
 
-```commandline
+```
 Math.floor(3.99)
 ```
 - round down
 - return 3.0
 
-```commandline
+```
 Math.max(10,20)
 Math.min(10,20)
 ```
 - return max and min   
 
 
-```commandline
+```
 System.out.printf("%.1fcm", 3.1448973897);
 ```
 - will return `3.1cm`
@@ -263,7 +263,7 @@ System.out.printf("%.1fcm", 3.1448973897);
 
   - `%[flags][width][.precision][specifier-character]`
 
-```commandline
+```
 System.out.printf("Hello %s", name);
 ```
 - `%s` = defined that the variable is a string 
@@ -273,7 +273,7 @@ System.out.printf("Hello %s", name);
 - `%f` = double
 - `%b` = boolean
 
-```commandline
+```
 %+.1f
 %,.1f
 %(.1f
@@ -285,7 +285,7 @@ System.out.printf("Hello %s", name);
 - adding `(` will enclose negative numbers in a `( )`
 - adding space ` ` will add space in front of a positive number and `-` in front of a negative number
 
-```commandline
+```
 %04d
 %4d
 %-4d
@@ -301,49 +301,49 @@ System.out.printf("Hello %s", name);
 - `-` will left justify the numbers
 
 # string methods
-```commandline
+```
 string.length()
 ```
 - get length of string
 
-```commandline
+```
 string.charAt(index)
 ```
 - give the character at `index`
 
-```commandline
+```
 string.indexOf("o");
 ```
 - return the index of the first occurrence of the letter 'o'
 
-```commandline
+```
 string.lastIndexOf("o");
 ```
 - return the last index of a character
 - the index number of the last occurrence of a character
 
-```commandline
+```
 string.toUpperCase()
 string.toLowerCase()
 string.trim()
 ```
 
-```commandline
+```
 string.replace("o", "a");
 ```
 - replaces any 'o' with 'a'
 
-```commandline
+```
 string.isEmpty()
 ```
 - return boolean if string is empty
 
-```commandline
+```
 string.contains(" ");
 ```
 - return boolean if a string contains a character
 
-```commandline
+```
 string.equals("password");
 ```
 - return boolean if 2 string matches
@@ -354,7 +354,7 @@ string.equals("password");
 # string substring methods
 - can create new string from portions of a string
 
-```commandline
+```
 string.substring(startIndex, endIndex)
 ```
 - `startIndex` inclusive
@@ -362,8 +362,17 @@ string.substring(startIndex, endIndex)
   - not necessary to give an `endIndex`
   - if not provided, will get the rest of the string
 
-```commandline
+```
 String username = email.substring(0, email.indexOf("@"));
 ```
 - `string.indexof()` returns the index of the given character
-- 
+
+
+# ternary operator
+- `?` followed by one of two possible values
+- `variable = (condition) ? ifTrue: ifFalse`
+- simpler version to if else statement
+
+```
+String passOrFail = (score >= 60) ? "PASS" : "FAIL"
+```
