@@ -349,3 +349,21 @@ string.equals("password");
 - return boolean if 2 string matches
 - does not account to case sensitivity
 - `string.equalsIgnoreCase("password")` is case insensitive 
+
+
+# string substring methods
+- can create new string from portions of a string
+
+```commandline
+string.substring(startIndex, endIndex)
+```
+- `startIndex` inclusive
+- `endIndex` exclusive
+  - not necessary to give an `endIndex`
+  - if not provided, will get the rest of the string
+
+```commandline
+String username = email.substring(0, email.indexOf("@"));
+```
+- `string.indexof()` returns the index of the given character
+- 
