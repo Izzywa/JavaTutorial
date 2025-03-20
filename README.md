@@ -463,3 +463,46 @@ continue
 # nested loop 
 - loop inside another loop
 - cannot use the same variable name for nested loops
+
+# method
+- a block of reusable code
+- executed when called `()`
+- write a code once and reuse it
+- D.R.Y = Dont Repeat Yourself
+
+```
+public static void main(String[] args) {
+  String name = 'BRO';
+  int age = 25; 
+  
+  happyBirthday(name);
+}
+
+static void happyBirthday(String name, int agr) {
+  System.out.printf("Happy Birthday %s, %d", name, age);
+}
+
+```
+## creating a method
+- `static void <name>(parameter) {} `
+- make sure the name is descriptive of what it does
+- java will want the method to be static
+  - add the static keyword
+  - since calling the method from a static method, the other method also needs to be static
+
+methods are unfamiliar with a method declared within other method
+- need to pass arguments to the method
+- declare the parameter in the method
+- the name of the parameters can be different from the arguments
+- make sure data type and order is correct
+
+## a method that returns a double
+- when not returning anything = `void` keyword
+- when returning something, need to use keyword of the data type of value returned
+- need static because calling the method from a static method
+
+``` 
+static double square(double number) {
+  return number * number
+}
+```
