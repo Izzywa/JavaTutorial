@@ -506,3 +506,38 @@ static double square(double number) {
   return number * number
 }
 ```
+
+# overloaded methods
+- methods that share the same name, but different parameters
+- method name + parameters = unique method signature
+  - no 2 method can share the same signature
+  - but can share the same name 
+``` 
+static double add (double a, double b) {
+  return a + b;
+}
+
+static double add (double a, double b, double c ) {
+  return a + b + c;
+}
+```
+
+# variable scope
+- where a variable can be accessed
+  - local
+  - class
+
+## local variable
+- declare a variable inside a method
+- outside the method, the variable will not be recognised
+
+## class variable
+- declared inside the class
+  - not within any method
+  - recognise all inside the class
+- methods inside the class will recognise the class
+- if a variable have the same name in local and class 
+  - java will use any local variable first
+- better to use class variable for other situations
+  - constants (value does not change)
+  - object oriented programming
