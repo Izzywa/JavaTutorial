@@ -541,3 +541,14 @@ static double add (double a, double b, double c ) {
 - better to use class variable for other situations
   - constants (value does not change)
   - object oriented programming
+
+# example 
+a method called in another method attempts to use the scanner
+- although the calling method already declared scanner, the second method had not
+- solution:
+  - declare another scanner inside the other method 
+OR
+  - declare the scanner in the class
+  - `static Scanner scanner = new Scanner(System.in)`
+  - will have to put `static` as it will be accessed by static methods
+
