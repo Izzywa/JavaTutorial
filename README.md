@@ -552,3 +552,50 @@ OR
   - `static Scanner scanner = new Scanner(System.in)`
   - will have to put `static` as it will be accessed by static methods
 
+# multiline string
+- enclosed in 3 pairs of quotations
+
+# array
+- a collection of values of the same data type
+- a variable that can store more than 1 value
+``` 
+String[] fruits = {"apple", "orange", "banana"};
+```
+- add `[]` after data type
+- enclose values in `{}`
+- if print an array, will get a memory address
+  - arrays falls under a reference data dype
+- to access an element in an array, have to indicate an index number
+
+``` 
+fruits[0]
+fruits.lenght;
+```
+- `array.length` returns the length of the array
+
+## enhanced for loop
+- cycle once for each element within an array
+- aka for each loop
+``` 
+for (String fruit : fruits) {
+  System.out.println(fruit)
+}
+```
+-`String`: in the `()` insert the data type of the array
+- `fruit`: a unique identifier for each element within the array
+- `fruits`: the array we are iterating over
+- for every `fruit` in the array of `fruits`, do this
+
+## sorting array
+- access the class of arrays
+``` 
+Arrays.sort(<array>)
+```
+- will sort the `fruits` array alphabetically
+- if the array is numbers, will sort in ascending order
+
+## fill method
+``` 
+Arrays.fill(fruits, "pineapple")
+```
+- fill each element of the array with the value of "pineapple"
