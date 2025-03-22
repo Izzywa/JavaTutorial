@@ -468,7 +468,7 @@ continue
 - a block of reusable code
 - executed when called `()`
 - write a code once and reuse it
-- D.R.Y = Dont Repeat Yourself
+- D.R.Y = Don't Repeat Yourself
 
 ```
 public static void main(String[] args) {
@@ -564,7 +564,7 @@ String[] fruits = {"apple", "orange", "banana"};
 - add `[]` after data type
 - enclose values in `{}`
 - if print an array, will get a memory address
-  - arrays falls under a reference data dype
+  - arrays falls under a reference data type
 - to access an element in an array, have to indicate an index number
 
 ``` 
@@ -599,3 +599,33 @@ Arrays.sort(<array>)
 Arrays.fill(fruits, "pineapple")
 ```
 - fill each element of the array with the value of "pineapple"
+
+after initialising an array, could not change the length
+- ex: initialising and empty array, could not assign a value for array[0]
+
+need to assign the size of the array even before assigning any values
+``` 
+String[] foods = new String[3]
+```
+
+## searching through the elements of an array
+- when comparing 2 string, using `==` will instead compare the memory address
+- will need to use the string `.equals()` method to compare string
+```
+string1.equals(string2)
+```
+
+# variable arguments (varargs)
+- allow a method to accept a varying number of arguments
+- makes methods more flexible
+- no need for overloaded methods
+- java will pack the arguments into an array
+
+``` 
+static int add (int... numbers) {
+
+  ... do something with the array
+}
+```
+- declare the data type of the arguments that will be accepted
+- `numbers` = name of the array
